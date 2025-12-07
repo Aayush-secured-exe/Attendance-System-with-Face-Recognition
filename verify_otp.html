@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Verify OTP</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Blurred bluish background */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        linear-gradient(rgba(30, 64, 175, 0.6), rgba(30, 64, 175, 0.6)),
+        url('back1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      filter: blur(6px);
+      z-index: -1;
+    }
+
+    .otp-form {
+      background-color: rgba(30, 30, 30, 0.88);
+      padding: 40px;
+      border-radius: 14px;
+      box-shadow: 0 0 25px rgba(30, 58, 138, 0.5);
+      width: 400px;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .otp-form h2 {
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
+
+    .otp-form input {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0 20px;
+      background: #2c2c2c;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .otp-form button {
+      width: 100%;
+      padding: 14px;
+      background-color: #1e3a8a; /* dark bluish */
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .otp-form button:hover {
+      background-color: #274baf;
+    }
+
+    @media (max-width: 450px) {
+      .otp-form {
+        width: 90%;
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <form class="otp-form" action="verify_otp.php" method="POST">
+    <h2>Enter OTP</h2>
+    <input type="text" name="otp" placeholder="Enter OTP" required>
+    <button type="submit">Verify</button>
+  </form>
+
+</body>
+</html>

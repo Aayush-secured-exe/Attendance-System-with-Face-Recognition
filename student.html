@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Student</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #00ffcc;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        .details {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        .btn {
+            margin-top: 40px;
+            padding: 12px 25px;
+            font-size: 18px;
+            background-color: #0f62fe;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 5000); // Auto-redirect to index.html in 3 seconds
+    </script>
+</head>
+<body>
+    <h1>Welcome Back!</h1>
+    <div class="details">
+        <p>Your attendance has been successfully recorded.</p>
+        <p>Have a great day! 🎓</p>
+    </div>
+    <a class="btn" href="index.html">Close</a>
+</body>
+</html>
