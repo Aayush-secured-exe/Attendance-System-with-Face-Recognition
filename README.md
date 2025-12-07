@@ -68,19 +68,46 @@ The system works locally via XAMPP and is fully scalable for cloud deployment.
 ### 📂 Project Structure (generalized)
 ```
 /
-├─ uploads/ # Stored student face images
-├─ main.py # Primary face-recognition script (webcam + DB update)
-├─ admin_login/ # Admin authentication pages
-├─ new_student/ # Registration interface
-├─ attendance/ # Attendance UI pages
-├─ verify_otp/ # OTP verification logic
-├─ reset_password/ # Password reset pages
-├─ not_found.html # No-face-match screen
-├─ student.html # Success screen + auto-redirect
-├─ index.html # Landing page
-├─ styles.css # UI styling
-├─ db_connect.php # Database configuration
-└─ assets/ # Images, logos, backgrounds
+├─ vendor/
+├─ uploads/
+├─ attendance.py
+├─ for1.png
+├─ d7.png
+├─ d5.png
+├─ d3.png
+├─ d1.png
+├─ clz.png
+├─ att2.png
+├─ att1.png
+├─ ad1.png
+├─ verify_otp.php
+├─ update_password.php
+├─ send_otp.php
+├─ run_attendance.php
+├─ reset_password.php
+├─ register_student.php
+├─ logout.php
+├─ db_connect.php
+├─ admin_signup.php
+├─ admin_login.php
+├─ admin_dashboard.php
+├─ composer.lock
+├─ composer.json
+├─ logo.png
+├─ back1.png
+├─ ad2.png
+├─ styles.css
+├─ verify_otp.html
+├─ student.html
+├─ reset_password.html
+├─ not_found.html
+├─ new_student.html
+├─ loading.html
+├─ index.html
+├─ forgot_password.html
+├─ attendance.html
+├─ admin_signup.html
+└─ admin_login.html
 ```
 
 ---
