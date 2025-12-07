@@ -66,6 +66,7 @@ The system works locally via XAMPP and is fully scalable for cloud deployment.
 - **XAMPP** (Apache + MySQL hosting)
 
 ### 📂 Project Structure (generalized)
+```
 /
 ├─ uploads/ # Stored student face images
 ├─ main.py # Primary face-recognition script (webcam + DB update)
@@ -80,6 +81,7 @@ The system works locally via XAMPP and is fully scalable for cloud deployment.
 ├─ styles.css # UI styling
 ├─ db_connect.php # Database configuration
 └─ assets/ # Images, logos, backgrounds
+```
 
 ---
 
